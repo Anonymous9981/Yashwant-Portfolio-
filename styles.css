@@ -50,6 +50,18 @@ nav ul li a {
 nav ul li a:hover {
     color: #f39c12;
 }
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #005bb5;
+}
 
 /* Hero Section with Glassy and Blurry Background */
 .hero {
