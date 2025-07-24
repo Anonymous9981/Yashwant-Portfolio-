@@ -51,9 +51,16 @@ nav ul li a:hover {
     color: #f39c12;
 }
 /*view resume buttun in yellow */
+.center-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+}
+
 .view-resume-btn {
   display: inline-block;
-  background: #ffa500; /* Same orange as your Hire Me button */
+  background: #ffc400; /* Same yellow as your Hire Me button */
   color: #fff;
   font-size: 1.2em;
   font-weight: bold;
@@ -64,7 +71,13 @@ nav ul li a:hover {
   text-decoration: none;
   transition: background 0.2s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
 }
+
+.view-resume-btn:hover {
+  background: #e6a800; /* Slightly darker on hover */
+}
+
 
 .view-resume-btn:hover {
   background: #e69500;
