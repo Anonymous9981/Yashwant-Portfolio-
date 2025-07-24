@@ -50,18 +50,26 @@ nav ul li a {
 nav ul li a:hover {
     color: #f39c12;
 }
-.btn {
+/*view resume buttun in yellow */
+.view-resume-btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #0073e6;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  background: #ffa500; /* Same orange as your Hire Me button */
+  color: #fff;
+  font-size: 1.2em;
   font-weight: bold;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.btn:hover {
-  background-color: #005bb5;
+
+.view-resume-btn:hover {
+  background: #e69500;
 }
+
 
 /* Hero Section with Glassy and Blurry Background */
 .hero {
