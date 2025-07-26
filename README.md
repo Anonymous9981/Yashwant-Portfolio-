@@ -20,11 +20,11 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 📷 Preview
 
-![Portfolio Preview](screenshot.png) <!-- Replace with an actual screenshot if available -->
+![Portfolio Preview](Screenshot_2025_0726_200654.png) <!-- Replace with an actual screenshot if available -->
 
 ## 📬 Contact
 
-Feel free to reach out through the contact form on the site or connect with me on [LinkedIn](https://linkedin.com) or [Twitter](https://twitter.com).
+Feel free to reach out through the contact form on the site or connect with me on [LinkedIn](https://www.linkedin.com/in/yashwant-mukati-b1079428a)
 
 ## 📁 Folder Structure
 
