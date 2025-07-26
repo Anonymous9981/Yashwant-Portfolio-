@@ -43,7 +43,7 @@ nav ul li a.active {
   color: #f39c12;
   background: rgba(243,156,18,0.15);
 }
-/*-- sociel icons buttun */
+
 /* Social Icons Container (Navbar) */
 .social-icons {
   display: flex; gap: 1rem;
