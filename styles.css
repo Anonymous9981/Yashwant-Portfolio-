@@ -1,9 +1,3 @@
-/* ===============================
-  MODERN SLEEK PORTFOLIO (GLASSMORPHISM + GRADIENTS)
-  By: Yashwant Mukati – 2025
-=============================== */
-
-/* RESET & BASE */
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -40,7 +34,7 @@ nav ul li a {
   font-size:1.08rem;
   position:relative;
 }
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
   color:#ffe082; background:rgba(243,156,18,0.08);
   box-shadow: 0 2px 12px 0 rgba(243,156,18,0.10);
   transform: translateY(-2px) scale(1.05);
@@ -114,7 +108,6 @@ section h2::after {
   padding:2.2rem;
   margin-bottom:24px;
 }
-
 .btn-primary {
   display:inline-block; margin-top:2.3rem;
   padding:0.75rem 2.2rem;
@@ -126,7 +119,6 @@ section h2::after {
   transition:background 0.25s, color 0.22s, transform 0.2s;
 }
 .btn-primary:hover { background: #f6e58d; color:#f39c12; transform:scale(1.06); }
-
 
 /* Skills & Projects Grid */
 .grid {
@@ -161,7 +153,6 @@ section h2::after {
   border-bottom:2.5px solid #f39c12;
 }
 .card p { color:#eee; font-size:1.09rem; line-height:1.5; }
-
 
 /* Contact Form */
 #contact form {
@@ -215,7 +206,6 @@ section h2::after {
 #contact form button:hover {
   background:#fedc48; color:#f39c12; transform:scale(1.06);
 }
-
 ::-webkit-input-placeholder { color: #d0be91; opacity: 1; }
 ::-moz-placeholder { color: #d0be91; opacity: 1;}
 :-ms-input-placeholder { color: #d0be91; opacity: 1;}
@@ -237,13 +227,11 @@ footer {
   from { opacity: 0; transform: translateY(24px);}
   to { opacity: 1; transform: translateY(0);}
 }
-
 /* RESPONSIVE DESIGN */
 @media (max-width:1024px) {
   .container { max-width:97vw; }
   .nav-container { max-width:99vw; }
 }
-
 @media (max-width:800px) {
   .hero-content h1 { font-size:2.1rem; }
   .hero-content { padding: 1.2rem; }
