@@ -1,5 +1,3 @@
-// MODERN PORTFOLIO JS – Yashwant Mukati
-
 // Contact form AJAX validation & submission
 document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
@@ -42,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// (Optional) Fancy nav active link highlight
+// Nav active link highlight on scroll
 window.addEventListener("scroll", () => {
   const links = document.querySelectorAll('nav ul li a');
   const sections = [...links].map(link => document.querySelector(link.getAttribute('href')));
