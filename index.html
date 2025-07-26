@@ -6,6 +6,8 @@
   <title>Yashwant Mukati | Portfolio</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbT1FV1hSRNceR+rKsXca1XK9M+6IS6Gj+g5Rh5QGkuWl8aYAhD8NVz6SvO6u5X04ozJrvj8f0YRNs2Rt0jQBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,6 +25,13 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/yashwant-mukati-b1079428a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/919179949301" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:yashwantid9981@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Anonymous9981" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </header>
 
@@ -44,7 +53,7 @@
         B.Tech CSE student passionate about data engineering and security.  
         Eager to tackle challenging projects and make an impact.
       </p>
-      <a href="https://drive.google.com/file/d/14YZq7V-SvATsOa7PQdA1Q7moI381kTA1/view?usp=drivesdk" target="_blank" class="btn-primary">View Resume</a>
+      <a href="https://drive.google.com/file/d/14YZq7V-SvATsOa7PQdA1Q7moI381kTA1/view?usp=drivesdk" target="_blank" class="cta">View Resume</a>
     </div>
   </section>
 
@@ -90,7 +99,7 @@
   <section id="contact">
     <div class="container glass">
       <h2>Contact Me</h2>
-      <form id="contact-form" action="https://formspree.io/f/mnnvnqbr" method="POST">
+      <form id="contact-form" action="https://formspree.io/f/mnnvnqbr" method="POST" autocomplete="off">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required/>
@@ -110,7 +119,15 @@
 
   <!-- FOOTER -->
   <footer>
-    &copy; 2025 Yashwant Mukati. All rights reserved.
+    <div class="container">
+      <div class="social-icons footer-icons">
+        <a href="https://www.linkedin.com/in/yashwant-mukati-b1079428a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/919179949301" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:yashwantid9981@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Anonymous9981" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2025 Yashwant Mukati. All rights reserved.</p>
+    </div>
   </footer>
 
   <!-- JavaScript -->
