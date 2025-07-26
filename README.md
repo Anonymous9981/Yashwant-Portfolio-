@@ -26,6 +26,13 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 Feel free to reach out through the contact form on the site or connect with me on [LinkedIn](https://www.linkedin.com/in/yashwant-mukati-b1079428a)
 
-## 📁 Folder Structure
+##gitclone
+2. Open `index.html` in your browser.
+
+## 📄 License
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+## © 2025 Yashwant Mukati
+
 
 
