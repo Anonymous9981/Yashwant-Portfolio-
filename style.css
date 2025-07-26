@@ -43,6 +43,39 @@ nav ul li a.active {
   color: #f39c12;
   background: rgba(243,156,18,0.15);
 }
+/*-- sociel icons buttun */
+/* Social Icons Container (Navbar) */
+.social-icons {
+  display: flex; gap: 1rem;
+  align-items: center;
+}
+.social-icons a {
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.75);
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+/* Footer icons smaller */
+.footer-icons a {
+  font-size: 1.1rem;
+}
+
+/* Ensure navbar flex spacing */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* On very narrow screens, allow icons to wrap */
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 0.6rem;
+  }
+}
+
 
 /* ------------------------------------
    HERO
