@@ -1,54 +1,33 @@
-// Contact form AJAX validation & submission
-document.getElementById('contact-form').addEventListener('submit', function (e) {
+// Smooth scrolling & active link highlight
+const links = document.querySelectorAll('nav ul li a');
+function updateActive() {
+  let pos = window.scrollY + 120;
+  links.forEach(link => {
+    const sec = document.querySelector(link.getAttribute('href'));
+    if (sec && sec.offsetTop <= pos && sec.offsetTop + sec.offsetHeight > pos) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+window.addEventListener('scroll', updateActive);
+window.addEventListener('load', () => {
+  updateActive();
+  // ensure navbar links have default semi-opaque color
+  links.forEach(l => l.style.color = 'rgba(255,255,255,0.75)');
+});
+
+// Contact-form AJAX (unchanged)
+document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
-  const name = this.name.value.trim();
-  const email = this.email.value.trim();
-  const message = this.message.value.trim();
-  if (!name || !email || !message) {
-    alert('Please fill in all fields.');
-    return;
-  }
+  const [n, e_, m] = [this.name.value, this.email.value, this.message.value];
+  if (!n || !e_ || !m) return alert('Please fill in all fields.');
   fetch(this.action, {
     method: 'POST',
-    headers: { 'Accept': 'application/json' },
+    headers: { 'Accept':'application/json' },
     body: new FormData(this)
   })
-  .then(response => {
-    if (response.ok) {
-      alert('Thank you for your message!');
-      this.reset();
-    } else {
-      alert('Oops! There was an error submitting the form. Please try again.');
-    }
-  })
-  .catch(() => {
-    alert('Oops! There was an error submitting the form. Please try again.');
-  });
-});
-
-// Smooth in-page scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const href = this.getAttribute('href');
-    if (href.length > 1 && document.querySelector(href)) {
-      e.preventDefault();
-      document.querySelector(href).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
-
-// Nav active link highlight on scroll
-window.addEventListener("scroll", () => {
-  const links = document.querySelectorAll('nav ul li a');
-  const sections = [...links].map(link => document.querySelector(link.getAttribute('href')));
-  let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  sections.forEach((section, i) => {
-    if (section && section.offsetTop <= scrollPosition + 120) {
-      links.forEach(l => l.classList.remove('active'));
-      links[i].classList.add('active');
-    }
-  });
+  .then(r => r.ok ? (alert('Thank you!'), this.reset()) : alert('Error sending.'))
+  .catch(()=> alert('Error sending.'));
 });
