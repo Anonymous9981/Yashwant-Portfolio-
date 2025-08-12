@@ -96,6 +96,11 @@ nav ul li a.active {
 }
 .hero-content h1 { font-size: 2.5rem; color: #fff; margin-bottom: 1rem; }
 .hero-content p { font-size: 1.1rem; color: #eee; margin-bottom: 1.5rem; }
+
+/* ------------------------------------
+   CALL TO ACTION (CTA) BUTTON
+   This class styles the "Hire Me", "View Resume", and the new "View More on GitHub" buttons.
+------------------------------------ */
 .cta {
   display: inline-block; padding: 0.8rem 1.8rem;
   background: #f39c12; color: #fff; border-radius: 6px;
@@ -200,3 +205,4 @@ footer {
   nav ul { gap: 0.8rem; }
   .skills-grid, .projects-grid { grid-template-columns: 1fr; }
 }
+
