@@ -99,7 +99,6 @@ nav ul li a.active {
 
 /* ------------------------------------
    CALL TO ACTION (CTA) BUTTON
-   This class styles the "Hire Me", "View Resume", and the new "View More on GitHub" buttons.
 ------------------------------------ */
 .cta {
   display: inline-block; padding: 0.8rem 1.8rem;
@@ -128,6 +127,7 @@ section h2::after {
 /* enforce container clipping */
 .container {
   max-width: 1150px; margin: 0 auto;
+  padding: 0 1rem;
   overflow: hidden;
 }
 
@@ -140,6 +140,7 @@ section h2::after {
   border-radius: 12px; padding: 1.8rem;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* ------------------------------------
@@ -147,10 +148,11 @@ section h2::after {
 ------------------------------------ */
 .grid { display: grid; gap: 1.5rem; }
 .skills-grid {
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  justify-items: center;
 }
 .projects-grid {
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 /* ensure content wraps and stays inside */
@@ -194,15 +196,24 @@ footer {
 /* ------------------------------------
    RESPONSIVE
 ------------------------------------ */
+@media (max-width: 1024px) {
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+}
+
 @media (max-width: 768px) {
   nav ul { gap: 1rem; }
   .skills-grid, .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
   }
+  section { padding: 4rem 1.5rem; }
 }
+
 @media (max-width: 480px) {
   nav { padding-bottom: 0.5rem; }
   nav ul { gap: 0.8rem; }
   .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+  .hero-content { padding: 1.5rem; }
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero-content p { font-size: 0.95rem; }
 }
-
