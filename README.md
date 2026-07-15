@@ -1,4 +1,4 @@
-#https://yashwantsportfolio.netlify.app/
+# Yashwant's Portfolio
 Personal portfolio website built with HTML, CSS, and JavaScript. Showcasing my projects, skills, and contact information.
 # 💼 Personal Portfolio Website
 
@@ -33,6 +33,5 @@ Feel free to reach out through the contact form on the site or connect with me o
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ## © 2025 Yashwant Mukati
-
 
 
